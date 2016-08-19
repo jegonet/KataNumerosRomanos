@@ -86,6 +86,16 @@ public class PruebaKatador {
     }
     
     @Test
+    public void toDoValidarDecima99() {
+        Assert.assertEquals(KatadorNumerosRomanos.convertirEntero(99), "XCIX");
+    }   
+    
+    @Test
+    public void toDoValidarCentena999() {
+        Assert.assertEquals(KatadorNumerosRomanos.convertirEntero(999), "CMXCIX");
+    }
+    
+    @Test
     public void validarNumeroCentena9() {
         Assert.assertEquals(KatadorNumerosRomanos.convertirEntero(900), "CM");
     }
