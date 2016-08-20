@@ -26,7 +26,7 @@ public class KatadorNumerosRomanos {
         unidad = new UnidadRomana("I", "V", "X");
         decena = new UnidadRomana("X", "L", "C");
         centena = new UnidadRomana("C", "D", "M");
-        mil = new UnidadRomana("M", "", "");  //No asigno algunas variables
+        mil = new UnidadRomana("M", "", "");  //No asigno algunas variables porque no son necesarias para el ejecercicio
 
         String valorTextual = Integer.toString(numero);
         String valorRomano = "";
