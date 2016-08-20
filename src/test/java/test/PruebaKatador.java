@@ -31,82 +31,83 @@ public class PruebaKatador {
     }
     
     @Test
-    public void validarNumeroUnidad3() {
-        Assert.assertEquals(KatadorNumerosRomanos.convertirEntero(3), "III");
+    public void validarNumeroUnidad3() throws Exception{
+        String res=KatadorNumerosRomanos.convertirEntero(3);
+        Assert.assertEquals(res, "III");
     }
     
     @Test
-    public void validarNumeroUnidad4() {
+    public void validarNumeroUnidad4() throws Exception{
         Assert.assertEquals(KatadorNumerosRomanos.convertirEntero(4), "IV");
     }
     
     @Test
-    public void validarNumeroUnidad8() {
+    public void validarNumeroUnidad8() throws Exception{
         Assert.assertEquals(KatadorNumerosRomanos.convertirEntero(8), "VIII");
     }
     
     @Test
-    public void validarNumeroUnidad9() {
+    public void validarNumeroUnidad9() throws Exception{
         Assert.assertEquals(KatadorNumerosRomanos.convertirEntero(9), "IX");
     }
     
     @Test
-    public void validarNumeroDecima3() {
+    public void validarNumeroDecima3() throws Exception{
         Assert.assertEquals(KatadorNumerosRomanos.convertirEntero(30), "XXX");
     }
     
     @Test
-    public void validarNumeroDecima4() {
+    public void validarNumeroDecima4() throws Exception{
         Assert.assertEquals(KatadorNumerosRomanos.convertirEntero(40), "XL");
     }
     
     @Test
-    public void validarNumeroDecima8() {
+    public void validarNumeroDecima8() throws Exception{
         Assert.assertEquals(KatadorNumerosRomanos.convertirEntero(80), "LXXX");
     }
     
     @Test
-    public void validarNumeroDecima9() {
+    public void validarNumeroDecima9() throws Exception{
         Assert.assertEquals(KatadorNumerosRomanos.convertirEntero(90), "XC");
     }
     
     @Test
-    public void validarNumeroCentena3() {
+    public void validarNumeroCentena3() throws Exception{
         Assert.assertEquals(KatadorNumerosRomanos.convertirEntero(300), "CCC");
     }
     
     @Test
-    public void validarNumeroCentena4() {
+    public void validarNumeroCentena4() throws Exception{
         Assert.assertEquals(KatadorNumerosRomanos.convertirEntero(400), "CD");
     }
     
     @Test
-    public void validarNumeroCentena8() {
+    public void validarNumeroCentena8() throws Exception{
         Assert.assertEquals(KatadorNumerosRomanos.convertirEntero(800), "DCCC");
     }
     
     @Test
-    public void toDoValidarDecima99() {
+    public void toDoValidarDecima99() throws Exception{
         Assert.assertEquals(KatadorNumerosRomanos.convertirEntero(99), "XCIX");
     }   
     
     @Test
-    public void toDoValidarCentena999() {
+    public void toDoValidarCentena999() throws Exception{
         Assert.assertEquals(KatadorNumerosRomanos.convertirEntero(999), "CMXCIX");
     }
     
     @Test
-    public void validarNumeroCentena9() {
+    public void validarNumeroCentena9() throws Exception{
         Assert.assertEquals(KatadorNumerosRomanos.convertirEntero(900), "CM");
     }
     
     @Test
-    public void validarNumeroMiles3() {
+    public void validarNumeroMiles3() throws Exception{
         Assert.assertEquals(KatadorNumerosRomanos.convertirEntero(3000), "MMM");
     }
     
     @Test
-    public void validarNumeroCompletoConcatenacion() {
-        Assert.assertEquals(KatadorNumerosRomanos.convertirEntero(3497), "MMMCDXCVIII");
+    public void validarNumeroCompletoConcatenacion() throws Exception{
+        Assert.assertEquals(KatadorNumerosRomanos.convertirEntero(3497), "MMMCDXCVII");
     }
 }
